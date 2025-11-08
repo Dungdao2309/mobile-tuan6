@@ -6,7 +6,6 @@ class ApiService {
   static const String apiUrl =
       'https://mock.apidog.com/m1/890655-872447-default/v2/product';
 
-  /// Hàm gọi API GET để lấy danh sách sản phẩm
   static Future<List<Product>> fetchProducts() async {
     final response = await http.get(Uri.parse(apiUrl));
 
